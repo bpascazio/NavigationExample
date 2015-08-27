@@ -43,15 +43,21 @@
                                         <include reference="WiF-8j-VBa"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="QjD-Ir-ahC" kind="show" id="EuE-rV-CJf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1127806027" green="1" blue="0.1341764413" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pgj-Kd-ghd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="27" id="3lY-Ai-JtN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pgj-Kd-ghd" secondAttribute="trailing" constant="56" id="Auh-GC-ZCZ"/>
+                            <constraint firstItem="pgj-Kd-ghd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="3lY-Ai-JtN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pgj-Kd-ghd" secondAttribute="trailing" constant="5" id="Auh-GC-ZCZ"/>
                             <constraint firstItem="pgj-Kd-ghd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="VdZ-cX-aNe"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pgj-Kd-ghd"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="3lY-Ai-JtN"/>
                                 <exclude reference="Auh-GC-ZCZ"/>
@@ -59,6 +65,9 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="pgj-Kd-ghd"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="3lY-Ai-JtN"/>
                                 <include reference="Auh-GC-ZCZ"/>
@@ -66,6 +75,9 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pgj-Kd-ghd"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="3lY-Ai-JtN"/>
                                 <include reference="VdZ-cX-aNe"/>
@@ -78,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1057" y="267"/>
         </scene>
-        <!--View Controller Blue-->
+        <!--View Controller Red-->
         <scene sceneID="iwe-2v-qNZ">
             <objects>
-                <viewController id="QjD-Ir-ahC" userLabel="View Controller Blue" sceneMemberID="viewController">
+                <viewController id="QjD-Ir-ahC" userLabel="View Controller Red" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZC1-lk-Kd0"/>
                         <viewControllerLayoutGuide type="bottom" id="one-kx-Enl"/>
@@ -89,12 +101,76 @@
                     <view key="view" contentMode="scaleToFill" id="Ys6-1U-Dng">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuR-FY-R00">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.47945972679999999" blue="0.37459405359999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Kyw-lH-DsR"/>
+                                    <constraint firstAttribute="width" constant="167" id="njh-JN-5dc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kyw-lH-DsR"/>
+                                        <exclude reference="njh-JN-5dc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Kyw-lH-DsR"/>
+                                        <include reference="njh-JN-5dc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="109" width="277" height="181"/>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ZuR-FY-R00" secondAttribute="centerY" id="QIB-2R-RDR"/>
+                            <constraint firstAttribute="centerX" secondItem="ZuR-FY-R00" secondAttribute="centerX" id="cPw-mC-Zzi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZuR-FY-R00"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QIB-2R-RDR"/>
+                                <exclude reference="cPw-mC-Zzi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZuR-FY-R00"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QIB-2R-RDR"/>
+                                <include reference="cPw-mC-Zzi"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALD-nc-9Lb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="267"/>
+        </scene>
+        <!--View Controller Yellow-->
+        <scene sceneID="nib-BG-deJ">
+            <objects>
+                <viewController id="7NH-Bu-vHs" userLabel="View Controller Yellow" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tv4-qM-Ifr"/>
+                        <viewControllerLayoutGuide type="bottom" id="4CD-en-vMf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S9d-3e-v9V">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97294882180988584" green="1" blue="0.70292086125831665" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sl-do-Mn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2434.5" y="267"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rtz-1E-PgH">
