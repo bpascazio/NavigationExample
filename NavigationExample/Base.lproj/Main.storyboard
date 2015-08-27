@@ -118,7 +118,7 @@
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <include reference="Kyw-lH-DsR"/>
-                                        <include reference="njh-JN-5dc"/>
+                                        <exclude reference="njh-JN-5dc"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
@@ -135,6 +135,7 @@
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ZuR-FY-R00" secondAttribute="centerY" id="QIB-2R-RDR"/>
+                            <constraint firstItem="ZuR-FY-R00" firstAttribute="width" secondItem="Ys6-1U-Dng" secondAttribute="width" id="X2L-Pb-lB7"/>
                             <constraint firstAttribute="centerX" secondItem="ZuR-FY-R00" secondAttribute="centerX" id="cPw-mC-Zzi"/>
                         </constraints>
                         <variation key="default">
@@ -143,6 +144,7 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="QIB-2R-RDR"/>
+                                <exclude reference="X2L-Pb-lB7"/>
                                 <exclude reference="cPw-mC-Zzi"/>
                             </mask>
                         </variation>
@@ -152,6 +154,7 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="QIB-2R-RDR"/>
+                                <include reference="X2L-Pb-lB7"/>
                                 <include reference="cPw-mC-Zzi"/>
                             </mask>
                         </variation>
