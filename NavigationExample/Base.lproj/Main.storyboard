@@ -124,6 +124,12 @@
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="109" width="277" height="181"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Kyw-lH-DsR"/>
+                                        <include reference="njh-JN-5dc"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,6 +147,15 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZuR-FY-R00"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QIB-2R-RDR"/>
+                                <include reference="cPw-mC-Zzi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ZuR-FY-R00"/>
                             </mask>
