@@ -104,30 +104,58 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuR-FY-R00">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rp-8Q-9ii">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Yellow">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="7NH-Bu-vHs" kind="show" id="uDv-8T-fGw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.47945972679999999" blue="0.37459405359999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="3rp-8Q-9ii" secondAttribute="centerY" constant="-0.5" id="G2F-s4-C5g"/>
                                     <constraint firstAttribute="height" constant="167" id="Kyw-lH-DsR"/>
                                     <constraint firstAttribute="width" constant="167" id="njh-JN-5dc"/>
+                                    <constraint firstAttribute="centerX" secondItem="3rp-8Q-9ii" secondAttribute="centerX" constant="1.5" id="x8h-rH-cnS"/>
                                 </constraints>
                                 <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="3rp-8Q-9ii"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <exclude reference="Kyw-lH-DsR"/>
                                         <exclude reference="njh-JN-5dc"/>
+                                        <exclude reference="G2F-s4-C5g"/>
+                                        <exclude reference="x8h-rH-cnS"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="3rp-8Q-9ii"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <include reference="Kyw-lH-DsR"/>
                                         <exclude reference="njh-JN-5dc"/>
+                                        <include reference="G2F-s4-C5g"/>
+                                        <include reference="x8h-rH-cnS"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="109" width="277" height="181"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="3rp-8Q-9ii"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <include reference="Kyw-lH-DsR"/>
                                         <include reference="njh-JN-5dc"/>
+                                        <include reference="G2F-s4-C5g"/>
+                                        <include reference="x8h-rH-cnS"/>
                                     </mask>
                                 </variation>
                             </view>
